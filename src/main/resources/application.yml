@@ -1,0 +1,17 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: crm-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lachgar03/CRM-Config-Server.git
+          clone-on-start: true
+          default-label: master
+          force-pull: true
+logging:
+  level:
+    org.springframework.cloud.config.server: debug
+    org.eclipse.jgit: debug
