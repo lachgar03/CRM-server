@@ -8,6 +8,7 @@ spring:
       server:
         git:
           uri: https://github.com/lachgar03/CRM-Config-Server.git
+          search-paths: auth-service-config
           clone-on-start: true
           default-label: master
           force-pull: true
